@@ -101,7 +101,7 @@
 
 // part 4
 
-
+//
 let inputFirstName = prompt('inputFirstName');
 
 let inputMiddleName = prompt('inputMiddleName');
@@ -109,9 +109,12 @@ let inputLastName = prompt('inputLastName');
 let inputAge = +prompt('inputAge');
 let space = ' ';
 
-let person = (inputAge + space + inputFirstName + space + inputMiddleName + space + inputLastName);
+let person = (+(inputAge) + space + inputFirstName + space + inputMiddleName + space + inputLastName);
 
 console.log(person);
+console.log(typeof inputAge);
+
+
 
 
 
