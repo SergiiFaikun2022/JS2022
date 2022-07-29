@@ -5,7 +5,7 @@
 
 
 // let x = prompt();
-// if (x!=0){
+// if (x!==0){
 //     console.log('Вірно')
 // }else {
 //     console.log('Невірно');
@@ -20,7 +20,7 @@
 // (в першу, другу, третю или четверту частину години).
 //
 
-// let time = prompt('Enter number');
+// let time = +prompt('Enter number');
 //
 // if (time>=0 && time<=15 ){
 //     console.log('first quarter');
@@ -122,16 +122,17 @@
 
 
 
-// ! перший варіант, тут єдине хибне значення можна вести це пуста стрінга, все інше буде tru так як приймає стрігу
 
-// let x = prompt('enter anything') || 'default';
-// console.log(x);
+let x = NaN;
 
-// ! другий варіант це самостійно змінній давати значення: стрінг, число, undefined, null  і тд включно, в приклад
-// ввів false,і виводить default, якщо ввести будь яке значення tru то виведе те що введене.
+if (x === false || x === '' || x === undefined || x === NaN || x === null || x === 0){
+    x = "default";
+    console.log(x);
 
-// let x = false || 'default';
-// console.log(x);
+}else {
+    console.log('ok')
+}
+
 
 
 
