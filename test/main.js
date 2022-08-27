@@ -137,3 +137,7 @@ let coursesAndDurationArray = [
 ];
 
 coursesAndDurationArray.forEach()
+
+for (const coursesAndDurationArrayElement of coursesAndDurationArray) {
+    console.log(coursesAndDurationArrayElement);
+}
