@@ -141,3 +141,6 @@ coursesAndDurationArray.forEach()
 for (const coursesAndDurationArrayElement of coursesAndDurationArray) {
     console.log(coursesAndDurationArrayElement);
 }
+
+
+coursesAndDurationArray.sort()
